@@ -1,0 +1,116 @@
+---
+import Base from "../layouts/Base.astro";
+import Ordinal from "../components/Ordinal.astro";
+---
+
+<Base title="Registration" description="Registration information for the 8th FCWS Workshop">
+  <div class="content-body">
+    <div class="page-header" style="padding-top:0;">
+      <h1>Registration</h1>
+      <p class="subtitle"><Ordinal n={8} /> FCWS — Kyoto 2026</p>
+    </div>
+
+    <div class="reg-banner">
+      <div class="reg-banner-text">
+        <strong>Registration is now open</strong>
+        <span>Register directly via The Combustion Institute portal</span>
+      </div>
+      <a
+        href="https://members.combustioninstitute.org/members/evr/reg_main.php?orgcode=CMBI&evid=64367307"
+        class="btn btn-primary"
+        target="_blank"
+        rel="noopener"
+      >
+        Register Now →
+      </a>
+    </div>
+
+    <h2>Fees</h2>
+    <table>
+      <thead>
+        <tr><th>Category</th><th>Early Bird (ends 21 June 2026)</th><th>Regular (ends 12 July 2026)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Early Career</td><td>$150</td><td>$200</td></tr>
+        <tr><td>Senior</td><td>$200</td><td>$250</td></tr>
+      </tbody>
+    </table>
+
+    <div class="notice">
+      Registration closes <strong>12 July 2026</strong>. Only onsite registration at regular rates will be available after that date.
+    </div>
+
+    <h2>What is Included</h2>
+    <ul>
+      <li>Access to all FCWS sessions (25–26 July)</li>
+      <li>Morning and afternoon coffee breaks</li>
+      <li>Lunches on both days</li>
+      <li>Reception with non-alcoholic beverages on Saturday 25 July (17:30–19:30)</li>
+    </ul>
+
+    <h2>Posters</h2>
+    <ul>
+      <li>Poster abstract submission deadline: <strong>12 June 2026</strong></li>
+      <li>
+        Submit abstracts to:
+        <a href="mailto:matteo.pelucchi@polimi.it">Matteo Pelucchi</a> and
+        <a href="mailto:byang@tsinghua.edu.cn">Bin Yang</a>
+      </li>
+      <li>
+        <a href="/files/poster-abstract-template-fcws2026.docx" download>
+          Download poster abstract template (.docx) →
+        </a>
+      </li>
+      <li>WiPP submitted to the <Ordinal n={41} /> ISOC are also welcome</li>
+      <li>Poster format is the same as WiPP at the <Ordinal n={41} /> ISOC</li>
+    </ul>
+
+    <h2>Visa Assistance</h2>
+    <p>
+      If you require a visa invitation letter to attend, please complete the form below:
+    </p>
+    <p>
+      <a
+        href="https://members.combustioninstitute.org/members/form_edit.php?org_id=CMBI&fid=10351241"
+        class="btn btn-secondary"
+        target="_blank"
+        rel="noopener"
+      >
+        Visa Assistance Form →
+      </a>
+    </p>
+  </div>
+</Base>
+
+<style>
+.reg-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  background: var(--blue-dark, #0f2236);
+  border-left: 4px solid var(--blue);
+  padding: 1.1rem 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.reg-banner-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.reg-banner-text strong {
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.reg-banner-text span {
+  color: var(--ink-faint);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 480px) {
+  .reg-banner { flex-direction: column; align-items: flex-start; }
+}
+</style>

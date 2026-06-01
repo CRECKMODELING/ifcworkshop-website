@@ -1,0 +1,433 @@
+---
+import Base from "../layouts/Base.astro";
+import Ordinal from "../components/Ordinal.astro";
+---
+
+<Base title="Program" description="Program of the 8th International Workshop on Flame Chemistry">
+  <div class="content-body">
+    <div class="page-header" style="padding-top:0;">
+      <h1>Program</h1>
+      <p class="subtitle"><Ordinal n={8} /> FCWS &mdash; 25–26 July 2026, Kyoto</p>
+    </div>
+
+    <div class="pdf-banner">
+      <div class="pdf-banner-text">
+        <strong>Full Agenda Available</strong>
+        <span>Download the official agenda or add both workshop days to your calendar</span>
+      </div>
+      <div class="pdf-banner-actions">
+        <a href="/files/agenda-8th-fcws-2026.pdf" class="btn btn-primary" download>
+          ↓ Download PDF
+        </a>
+        <a href="/files/8th-fcws-2026.ics" class="btn btn-ghost" download>
+          + Add to Calendar
+        </a>
+      </div>
+    </div>
+
+    <!-- DAY 1 -->
+    <div class="program-day-header">
+      <span class="program-day-label">Day 1</span>
+      <span class="program-day-date">Saturday, 25<sup>th</sup> July 2026</span>
+    </div>
+
+    <table class="program-table">
+      <colgroup>
+        <col style="width:7rem"/>
+        <col style="width:10rem"/>
+        <col/>
+      </colgroup>
+      <thead>
+        <tr><th>Time</th><th>Moderator</th><th>Session / Talk</th></tr>
+      </thead>
+      <tbody>
+
+        <tr class="prog-row-plain">
+          <td>8.00–8.30</td>
+          <td></td>
+          <td><strong>Registration</strong></td>
+        </tr>
+
+        <tr class="prog-row-topic">
+          <td colspan="3" class="topic-label">
+            Joint Session — RCM &amp; Flame Chemistry Workshops
+          </td>
+        </tr>
+        <tr>
+          <td>8.30–8.40</td>
+          <td rowspan="4" class="moderator-cell">Matteo Pelucchi<br/>Scott Goldsborough</td>
+          <td><strong>Introduction</strong></td>
+        </tr>
+        <tr>
+          <td>8.40–9.05</td>
+          <td>
+            <span class="talk-title">"Community-driven Collaboration: Scientific Advances via the RCM Workshop Initiatives"</span>
+            <span class="talk-speaker">Scott Goldsborough — Argonne National Laboratory, USA</span>
+          </td>
+        </tr>
+        <tr>
+          <td>9.05–9.20</td>
+          <td>
+            <span class="talk-title">"Highlights from the <Ordinal n={7}/> Flame Chemistry Workshop: challenges and objectives in chemical kinetics modeling of combustion and plasma combustion"</span>
+            <span class="talk-speaker">Matteo Pelucchi — Politecnico di Milano, Italy</span>
+          </td>
+        </tr>
+        <tr>
+          <td>9.20–9.35</td>
+          <td>
+            <span class="talk-title">"Combining Theory, Modeling, and Experiment: An Example from DME Research"</span>
+            <span class="talk-speaker">Markus Köhler — German Aerospace Center, Stuttgart, Germany</span>
+          </td>
+        </tr>
+        <tr>
+          <td>9.35–10.00</td>
+          <td></td>
+          <td><strong>Open Discussion</strong></td>
+        </tr>
+        <tr class="prog-row-break">
+          <td>10.00–10.30</td>
+          <td></td>
+          <td>Coffee Break &amp; Group Picture</td>
+        </tr>
+
+        <tr class="prog-row-topic">
+          <td colspan="3" class="topic-label">Opening FCWS</td>
+        </tr>
+        <tr>
+          <td>10.30–10.45</td>
+          <td class="moderator-cell">Matteo Pelucchi<br/>Bin Yang</td>
+          <td><strong>Welcome, summary and agenda</strong></td>
+        </tr>
+
+        <tr class="prog-row-topic">
+          <td colspan="3" class="topic-label">
+            Topic 1 — Sustainable Fuels Combustion
+            <span class="topic-sub">LFS, IDT, pollutants: H₂, NH₃, SAFs</span>
+          </td>
+        </tr>
+        <tr>
+          <td>10.45–11.30</td>
+          <td class="moderator-cell">Liming Cai</td>
+          <td>
+            <span class="talk-title">"Theoretical kinetics of reactions between molecular oxygen and nitrogen centered radicals formed during alkylamine oxidation"</span>
+            <span class="talk-speaker">Yasuyuki Sakai — Ibaraki University, Japan</span>
+            <span class="talk-title">"Multiscale physics-based, data-driven studies of combustion and emissions of hydrogen and Ammonia"</span>
+            <span class="talk-speaker">Mike Burke — Columbia University, USA</span>
+            <span class="talk-title">"Combustion chemistry of SAF and supercritical autoignition of H₂"</span>
+            <span class="talk-speaker">Song Cheng — Hong Kong Polytechnic University, Hong Kong</span>
+          </td>
+        </tr>
+        <tr>
+          <td>11.30–12.15</td>
+          <td></td>
+          <td><strong>Open Discussion</strong></td>
+        </tr>
+        <tr class="prog-row-break">
+          <td>12.15–13.30</td>
+          <td></td>
+          <td>Lunch</td>
+        </tr>
+
+        <tr class="prog-row-topic">
+          <td colspan="3" class="topic-label">
+            Topic 2 — Advanced Diagnostics for Combustion Measurements
+          </td>
+        </tr>
+        <tr>
+          <td>13.30–14.15</td>
+          <td class="moderator-cell">Andrea Comandini</td>
+          <td>
+            <span class="talk-title">"Simultaneous multi-species sensing in shock tubes through variable-pathlength laser absorption"</span>
+            <span class="talk-speaker">Ron Hanson — Stanford University, USA</span>
+            <span class="talk-title">"Synchrotron-based diagnostics for chemical kinetic experiments"</span>
+            <span class="talk-speaker">Tina Kasper — Paderborn University, Germany</span>
+            <span class="talk-title">"Structured combustion data and databases for kinetic mechanism development and validation"</span>
+            <span class="talk-speaker">Tibor Nagy — Research Centre for Natural Sciences, Hungary</span>
+          </td>
+        </tr>
+        <tr>
+          <td>14.15–15.00</td>
+          <td></td>
+          <td><strong>Open Discussion</strong></td>
+        </tr>
+        <tr class="prog-row-break">
+          <td>15.00–15.30</td>
+          <td></td>
+          <td>Coffee Break</td>
+        </tr>
+
+        <tr class="prog-row-topic">
+          <td colspan="3" class="topic-label">
+            Topic 3 — Plasma Combustion: Experiments and Modelling
+          </td>
+        </tr>
+        <tr>
+          <td>15.30–16.15</td>
+          <td class="moderator-cell">Bin Yang</td>
+          <td>
+            <span class="talk-title">"Theoretical study and cross section calculation of electron-molecule scattering"</span>
+            <span class="talk-speaker">Xianwu Jiang — Wuhan University of Technology, China</span>
+            <span class="talk-title">"Laser diagnostics methods for plasma systems"</span>
+            <span class="talk-speaker">Wei Ren — The Chinese University of Hong Kong, Hong Kong</span>
+            <span class="talk-title">"Low temperature combustion and plasma-assisted combustion"</span>
+            <span class="talk-speaker">Nicholas Tsolas — Auburn University, USA</span>
+          </td>
+        </tr>
+        <tr>
+          <td>16.15–17.00</td>
+          <td></td>
+          <td><strong>Open Discussion</strong></td>
+        </tr>
+        <tr>
+          <td>17.00–17.30</td>
+          <td class="moderator-cell">Organizers</td>
+          <td><strong>Summary from Day 1</strong></td>
+        </tr>
+        <tr class="prog-row-break">
+          <td>17.30–19.30</td>
+          <td></td>
+          <td><strong>Poster Session &amp; Reception</strong></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <!-- DAY 2 -->
+    <div class="program-day-header" style="margin-top:3rem;">
+      <span class="program-day-label">Day 2</span>
+      <span class="program-day-date">Sunday, 26<sup>th</sup> July 2026</span>
+    </div>
+
+    <table class="program-table">
+      <colgroup>
+        <col style="width:7rem"/>
+        <col style="width:10rem"/>
+        <col/>
+      </colgroup>
+      <thead>
+        <tr><th>Time</th><th>Moderator</th><th>Session / Talk</th></tr>
+      </thead>
+      <tbody>
+
+        <tr class="prog-row-plain">
+          <td>8.00–8.50</td>
+          <td></td>
+          <td><strong>Registration</strong></td>
+        </tr>
+        <tr>
+          <td>8.50–9.00</td>
+          <td class="moderator-cell">Matteo Pelucchi</td>
+          <td><strong>Welcome, summary and agenda</strong></td>
+        </tr>
+
+        <tr class="prog-row-topic">
+          <td colspan="3" class="topic-label">
+            Topic 4 — AI-TST-ME: Automation, Benchmarking and Knowledge Transfer
+          </td>
+        </tr>
+        <tr>
+          <td>9.00–9.45</td>
+          <td class="moderator-cell">Feng Zhang</td>
+          <td>
+            <span class="talk-title">"Edge migration of aromatic rings by radical reactions — kinetics and directionality: can the outcome of an aromatic edge migration be predicted on the fly?"</span>
+            <span class="talk-speaker">Alexander Mebel — Florida International University, USA</span>
+            <span class="talk-title">"Transforming combustion chemistry workflows to handle the big data deluge"</span>
+            <span class="talk-speaker">William H. Green — Massachusetts Institute of Technology, USA</span>
+            <span class="talk-title">"Automated kinetic data generation for combustion models using the tabulated model of transition states (TMTS) method"</span>
+            <span class="talk-speaker">Baptiste Sirjean — Centre National de la Recherche Scientifique, France</span>
+          </td>
+        </tr>
+        <tr>
+          <td>9.45–10.30</td>
+          <td></td>
+          <td><strong>Open Discussion</strong></td>
+        </tr>
+        <tr class="prog-row-break">
+          <td>10.30–11.00</td>
+          <td></td>
+          <td>Coffee Break</td>
+        </tr>
+
+        <tr class="prog-row-topic">
+          <td colspan="3" class="topic-label">
+            Topic 5 — Chemical Kinetics Mechanisms: Progress in Accuracy and Details
+          </td>
+        </tr>
+        <tr>
+          <td>11.00–11.45</td>
+          <td class="moderator-cell">Brandon Rotavera</td>
+          <td>
+            <span class="talk-title">"Speciation experiments in kinetics: what do we learn from modeling?"</span>
+            <span class="talk-speaker">Guillaume Dayma — Centre National de la Recherche Scientifique, France</span>
+            <span class="talk-title">"Details in elementary kinetics: setting the foundations for combustion kinetics modeling"</span>
+            <span class="talk-speaker">Raghu Sivaramakrishnan — Argonne National Laboratory, USA</span>
+            <span class="talk-title">"Developing detailed chemical kinetic mechanisms for fuel combustion"</span>
+            <span class="talk-speaker">Henry Curran — University of Ireland, Ireland</span>
+          </td>
+        </tr>
+        <tr>
+          <td>11.45–12.30</td>
+          <td></td>
+          <td><strong>Open Discussion</strong></td>
+        </tr>
+        <tr class="prog-row-break">
+          <td>12.30–13.45</td>
+          <td></td>
+          <td>Lunch</td>
+        </tr>
+
+        <tr class="prog-row-topic">
+          <td colspan="3" class="topic-label">Discussion and Actions</td>
+        </tr>
+        <tr>
+          <td>13.45–15.30</td>
+          <td class="moderator-cell">Matteo Pelucchi<br/>Bin Yang</td>
+          <td>
+            <ul style="margin:0; padding-left:1.2rem;">
+              <li>Open discussion on challenges</li>
+              <li>Feasible joint actions and initiatives for Topics 1–5</li>
+              <li>Feedback and suggestions from participants</li>
+            </ul>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+</Base>
+
+<style>
+.pdf-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  background: var(--blue-dark, #0f2236);
+  border-left: 4px solid var(--blue);
+  padding: 1.1rem 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.pdf-banner-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.pdf-banner-text strong {
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.pdf-banner-text span {
+  color: var(--ink-faint);
+  font-size: 0.8rem;
+}
+
+.pdf-banner-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+  .pdf-banner { flex-direction: column; align-items: flex-start; }
+}
+
+.program-day-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--ink);
+}
+.program-day-label {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--ink);
+}
+.program-day-date {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  letter-spacing: 0.03em;
+}
+
+.program-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+.program-table thead { border-bottom: 2px solid var(--ink); }
+.program-table th {
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+.program-table td {
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+  color: var(--ink-mid);
+  line-height: 1.5;
+}
+.program-table tr:last-child td { border-bottom: none; }
+
+.prog-row-topic td.topic-label {
+  background: var(--bg-tinted);
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--blue);
+  padding: 0.45rem 0.75rem;
+  border-top: 2px solid var(--blue-pale);
+  border-bottom: 1px solid var(--rule);
+}
+.topic-sub {
+  display: block;
+  font-weight: 300;
+  font-size: 0.73rem;
+  color: var(--ink-muted);
+  letter-spacing: 0;
+  margin-top: 0.1rem;
+}
+
+.prog-row-break td {
+  color: var(--ink-muted);
+  font-style: italic;
+  background: var(--bg-warm);
+}
+
+.moderator-cell {
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.talk-title {
+  display: block;
+  font-style: italic;
+  color: var(--ink);
+  margin-top: 0.5rem;
+  line-height: 1.45;
+}
+.talk-title:first-child { margin-top: 0; }
+
+.talk-speaker {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+  margin-bottom: 0.5rem;
+  margin-top: 0.15rem;
+}
+</style>

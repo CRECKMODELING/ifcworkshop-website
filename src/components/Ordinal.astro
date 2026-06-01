@@ -1,0 +1,13 @@
+---
+interface Props { n: number | string; }
+const { n } = Astro.props;
+const num = String(n);
+const last2 = Number(num.slice(-2));
+const last1 = Number(num.slice(-1));
+const suffix = last2 >= 11 && last2 <= 13 ? "th"
+  : last1 === 1 ? "st"
+  : last1 === 2 ? "nd"
+  : last1 === 3 ? "rd"
+  : "th";
+---
+{num}<sup style="font-size:0.6em; vertical-align:super; line-height:0;">{suffix}</sup>

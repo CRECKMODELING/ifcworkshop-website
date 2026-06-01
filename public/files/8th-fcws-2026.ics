@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//FCWS//8th International Flame Chemistry Workshop//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:8th FCWS 2026
+X-WR-TIMEZONE:Asia/Tokyo
+BEGIN:VEVENT
+UID:fcws-2026-day1@fcws.org
+DTSTART;TZID=Asia/Tokyo:20260725T080000
+DTEND;TZID=Asia/Tokyo:20260725T193000
+SUMMARY:8th International Flame Chemistry Workshop — Day 1
+DESCRIPTION:Day 1 of the 8th International Workshop on Flame Chemistry (FCWS).\n\nJoint session with the RCM Workshop\, invited talks on sustainable fuels combustion\, advanced diagnostics\, and plasma combustion.\n\nPoster session and reception: 17:30–19:30.\n\nFull agenda: https://fcws.org/program
+LOCATION:Doshisha University\, Shinmachi Campus\, Kyoto\, Japan
+URL:https://fcws.org/program
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:8th FCWS starts in one week
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fcws-2026-day2@fcws.org
+DTSTART;TZID=Asia/Tokyo:20260726T080000
+DTEND;TZID=Asia/Tokyo:20260726T153000
+SUMMARY:8th International Flame Chemistry Workshop — Day 2
+DESCRIPTION:Day 2 of the 8th International Workshop on Flame Chemistry (FCWS).\n\nInvited talks on AI/automation in theoretical kinetics and chemical kinetics mechanisms.\n\nClosing discussion and community actions: 13:45–15:30.\n\nFull agenda: https://fcws.org/program
+LOCATION:Doshisha University\, Shinmachi Campus\, Kyoto\, Japan
+URL:https://fcws.org/program
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

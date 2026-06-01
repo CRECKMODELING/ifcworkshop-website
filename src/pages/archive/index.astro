@@ -1,0 +1,43 @@
+---
+import Base from "../../layouts/Base.astro";
+import Ordinal from "../../components/Ordinal.astro";
+import { getCollection } from "astro:content";
+
+const editions = await getCollection("archive");
+editions.sort((a, b) => b.data.year - a.data.year);
+---
+
+<Base title="Archive" description="Past editions of the International Workshop on Flame Chemistry">
+  <div class="content-body">
+    <div class="page-header" style="padding-top:0; border-bottom:none; margin-bottom:1rem;">
+      <h1>Archive</h1>
+      <!-- <p class="subtitle">Past editions of the International Workshop on Flame Chemistry</p> -->
+    </div>
+
+    <ul class="archive-list">
+      {editions.map((ed) => (
+        <li>
+          <div>
+            <span class="archive-entry-title">
+              <Ordinal n={ed.data.edition} /> edition &mdash; {ed.data.location}
+            </span>
+            <div class="archive-entry-meta">
+              <span>{ed.data.dates}</span>
+              {ed.data.website
+                ? <a href={ed.data.website} target="_blank" rel="noopener">Workshop website →</a>
+                : <span class="archive-coming-soon">Materials coming soon</span>
+              }
+            </div>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+</Base>
+
+<style>
+.archive-coming-soon {
+  font-style: italic;
+  color: var(--ink-faint);
+}
+</style>

@@ -1,0 +1,75 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection } from "astro:content";
+import Ordinal from "../../components/Ordinal.astro";
+
+export async function getStaticPaths() {
+  const editions = await getCollection("archive");
+  return editions.map((ed) => ({
+    params: { year: String(ed.data.year) },
+    props: { ed },
+  }));
+}
+
+const { ed } = Astro.props;
+const { edition, year, location, dates, summary, website, programPdf, photoGallery, dataLinks } = ed.data;
+---
+
+<Base
+  title={`${edition}th FCWS — ${year}`}
+  description={`${edition}th International Workshop on Flame Chemistry — ${location}, ${year}`}
+
+>
+  <div class="content-body">
+    <div class="page-header">
+      <h1><Ordinal n={edition} /> FCWS — {year}</h1>
+      <p class="subtitle">{location} &nbsp;·&nbsp; {dates}</p>
+    </div>
+
+    <p><a href="/archive">&larr; Back to Archive</a></p>
+
+    {summary && <p style="margin-top:1.5rem;">{summary}</p>}
+
+    {website && (
+      <p style="margin-top:1rem;">
+        <a href={website} class="btn btn-secondary" target="_blank" rel="noopener">
+          Workshop website →
+        </a>
+      </p>
+    )}
+
+    {programPdf && (
+      <p>
+        <a href={programPdf} class="btn" download>Download Program (PDF)</a>
+      </p>
+    )}
+
+    {dataLinks && dataLinks.length > 0 && (
+      <>
+        <h2>Data &amp; Materials</h2>
+        <ul>
+          {dataLinks.map((link: { url: string; label: string }) => (
+            <li><a href={link.url} target="_blank" rel="noopener">{link.label}</a></li>
+          ))}
+        </ul>
+      </>
+    )}
+
+    {photoGallery && photoGallery.length > 0 && (
+      <>
+        <h2>Photos</h2>
+        <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap:0.75rem; margin-top:1rem;">
+          {photoGallery.map((src: string) => (
+            <img src={src} alt={`${year} FCWS photo`} loading="lazy" style="width:100%; aspect-ratio:4/3; object-fit:cover;" />
+          ))}
+        </div>
+      </>
+    )}
+
+    {(!programPdf && (!dataLinks || dataLinks.length === 0) && (!photoGallery || photoGallery.length === 0)) && (
+      <div class="notice" style="margin-top:1.5rem;">
+        Materials for this edition are not yet available online.
+      </div>
+    )}
+  </div>
+</Base>

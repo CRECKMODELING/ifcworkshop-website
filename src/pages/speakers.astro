@@ -1,0 +1,232 @@
+---
+import Base from "../layouts/Base.astro";
+import Ordinal from "../components/Ordinal.astro";
+
+const speakers = [
+  {
+    name: "Markus Köhler",
+    affiliation: "German Aerospace Center",
+    location: "Stuttgart, Germany",
+    topic: "Joint Session — RCM & Flame Chemistry",
+    photo: "/images/speakers/markus-koehler.jpg",
+  },
+  {
+    name: "Yasuyuki Sakai",
+    affiliation: "Ibaraki University",
+    location: "Japan",
+    topic: "Topic 1 — Sustainable Fuels Combustion",
+    photo: "/images/speakers/yasuyuki-sakai.png",
+  },
+  {
+    name: "Mike Burke",
+    affiliation: "Columbia University",
+    location: "USA",
+    topic: "Topic 1 — Sustainable Fuels Combustion",
+    photo: "/images/speakers/mike-burke.jpg",
+  },
+  {
+    name: "Song Cheng",
+    affiliation: "Hong Kong Polytechnic University",
+    location: "Hong Kong",
+    topic: "Topic 1 — Sustainable Fuels Combustion",
+    photo: "/images/speakers/song-cheng.jpg",
+  },
+  {
+    name: "Ron Hanson",
+    affiliation: "Stanford University",
+    location: "USA",
+    topic: "Topic 2 — Advanced Diagnostics",
+    photo: "/images/speakers/ron-hanson.jpg",
+  },
+  {
+    name: "Tina Kasper",
+    affiliation: "Paderborn University",
+    location: "Germany",
+    topic: "Topic 2 — Advanced Diagnostics",
+    photo: "/images/speakers/tina-kasper.png",
+  },
+  {
+    name: "Tibor Nagy",
+    affiliation: "Research Centre for Natural Sciences",
+    location: "Hungary",
+    topic: "Topic 2 — Advanced Diagnostics",
+    photo: "/images/speakers/tibor-nagy.jpg",
+  },
+  {
+    name: "Xianwu Jiang",
+    affiliation: "Wuhan University of Technology",
+    location: "China",
+    topic: "Topic 3 — Plasma Combustion",
+    photo: null,
+  },
+  {
+    name: "Wei Ren",
+    affiliation: "The Chinese University of Hong Kong",
+    location: "Hong Kong",
+    topic: "Topic 3 — Plasma Combustion",
+    photo: "/images/speakers/wei-ren.jpg",
+  },
+  {
+    name: "Nicholas Tsolas",
+    affiliation: "Auburn University",
+    location: "USA",
+    topic: "Topic 3 — Plasma Combustion",
+    photo: "/images/speakers/nicholas-tsolas.jpg",
+  },
+  {
+    name: "Alexander Mebel",
+    affiliation: "Florida International University",
+    location: "USA",
+    topic: "Topic 4 — AI-TST-ME",
+    photo: "/images/speakers/alexander-mebel.jpg",
+  },
+  {
+    name: "William H. Green",
+    affiliation: "Massachusetts Institute of Technology",
+    location: "USA",
+    topic: "Topic 4 — AI-TST-ME",
+    photo: "/images/speakers/william-green.jpg",
+  },
+  {
+    name: "Baptiste Sirjean",
+    affiliation: "Centre National de la Recherche Scientifique",
+    location: "France",
+    topic: "Topic 4 — AI-TST-ME",
+    photo: "/images/speakers/baptiste-sirjean.jpg",
+  },
+  {
+    name: "Guillaume Dayma",
+    affiliation: "Centre National de la Recherche Scientifique",
+    location: "France",
+    topic: "Topic 5 — Chemical Kinetics Mechanisms",
+    photo: "/images/speakers/guillaume-dayma.png",
+  },
+  {
+    name: "Raghu Sivaramakrishnan",
+    affiliation: "Argonne National Laboratory",
+    location: "USA",
+    topic: "Topic 5 — Chemical Kinetics Mechanisms",
+    photo: "/images/speakers/ragu-sivaramakrishnan.jpg",
+  },
+  {
+    name: "Henry Curran",
+    affiliation: "University of Ireland",
+    location: "Ireland",
+    topic: "Topic 5 — Chemical Kinetics Mechanisms",
+    photo: "/images/speakers/henry-curran.jpg",
+  },
+];
+---
+
+<Base title="Speakers" description="Invited speakers at the 8th International Workshop on Flame Chemistry">
+  <div class="content-body">
+    <div class="page-header" style="padding-top:0;">
+      <h1>Invited Speakers</h1>
+      <p class="subtitle"><Ordinal n={8} /> FCWS — Kyoto 2026</p>
+    </div>
+
+    <div class="speakers-grid">
+      {speakers.map(s => (
+        <div class="speaker-card">
+          <div class="speaker-photo-wrap">
+            {s.photo
+              ? <img src={s.photo} alt={s.name} loading="lazy" />
+              : <div class="speaker-placeholder">
+                  <span>{s.name.split(" ").map((w: string) => w[0]).join("").slice(0,2)}</span>
+                </div>
+            }
+          </div>
+          <div class="speaker-info">
+            <span class="speaker-name">{s.name}</span>
+            <span class="speaker-affiliation">{s.affiliation}</span>
+            <span class="speaker-location">{s.location}</span>
+            <span class="speaker-topic">{s.topic}</span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</Base>
+
+<style>
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.speaker-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.speaker-photo-wrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--bg-tinted);
+  border-bottom: 3px solid var(--blue);
+}
+
+.speaker-photo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+  filter: grayscale(20%);
+  transition: filter 0.25s;
+}
+.speaker-photo-wrap img:hover { filter: grayscale(0%); }
+
+.speaker-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-tinted);
+  color: var(--rule-heavy);
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+  user-select: none;
+}
+
+.speaker-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.speaker-name {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--ink);
+  line-height: 1.3;
+}
+
+.speaker-affiliation {
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+  line-height: 1.4;
+}
+
+.speaker-location {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.speaker-topic {
+  font-size: 0.72rem;
+  color: var(--blue);
+  margin-top: 0.2rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 0.35rem;
+}
+</style>

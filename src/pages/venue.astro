@@ -1,0 +1,54 @@
+---
+import Base from "../layouts/Base.astro";
+import Ordinal from "../components/Ordinal.astro";
+---
+
+<Base title="Venue" description="Venue and travel information for the 8th FCWS Workshop">
+  <div class="content-body">
+    <div class="page-header">
+      <h1>Venue &amp; Travel</h1>
+      <p class="subtitle">Kyoto, Japan — July 2026</p>
+    </div>
+
+    <h2>Workshop Venue</h2>
+    <p>
+      <strong>Doshisha University, Shinmachi Campus</strong><br/>
+      Kyoto, Japan
+    </p>
+    <p>
+      The campus is located approximately 15 minutes by subway from both
+      Kyoto Station and the Kyoto International Conference Center (ICC Kyoto),
+      the venue of the main <Ordinal n={41} /> ISOC symposium (26–31 July 2026).
+    </p>
+
+    <h2>Getting There</h2>
+    <h3>By Train</h3>
+    <p>
+      From Kyoto Station, take the Karasuma Subway Line (Kokusaikaikan direction)
+      to Imadegawa Station. The campus is a short walk from the station.
+    </p>
+    <h3>From Kansai International Airport (KIX)</h3>
+    <p>
+      Take the Haruka Limited Express to Kyoto Station (~75 min).
+    </p>
+    <h3>From Osaka Itami Airport (ITM)</h3>
+    <p>
+      Take the airport bus to Kyoto Station (~55 min).
+    </p>
+
+    <h2>Maps</h2>
+    <ul>
+      <li>
+        <a href="https://www.combustioninstitute.org/docs/Pre-ISOC_Workshop_Campus_Map.pdf" target="_blank" rel="noopener">
+          Campus Map (PDF) →
+        </a>
+      </li>
+      <li>
+        <a href="https://www.combustioninstitute.org/docs/Pre-ISOC_Workshops_Subway_Map.png" target="_blank" rel="noopener">
+          Kyoto Subway Map →
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</Base>

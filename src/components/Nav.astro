@@ -1,0 +1,43 @@
+---
+const links = [
+  { href: "/",             label: "Home" },
+  { href: "/program",      label: "Program" },
+  { href: "/speakers",     label: "Speakers" },
+  { href: "/committee",    label: "Committee" },
+  { href: "/registration", label: "Registration" },
+  { href: "/venue",        label: "Venue" },
+  { href: "/archive",      label: "Archive" },
+  { href: "/contact",      label: "Contact" },
+];
+
+const pathname = Astro.url.pathname.replace(/\/$/, "") || "/";
+---
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">
+      FCWS
+      <span class="nav-brand-sub">Flame Chemistry Workshop</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" id="nav-toggle">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      {links.map(({ href, label }) => {
+        const current = pathname === href || (href !== "/" && pathname.startsWith(href));
+        return (
+          <li>
+            <a href={href} aria-current={current ? "page" : undefined}>{label}</a>
+          </li>
+        );
+      })}
+    </ul>
+  </div>
+</nav>
+
+<script>
+  const toggle = document.getElementById("nav-toggle");
+  const menu = document.getElementById("nav-links");
+  toggle?.addEventListener("click", () => {
+    const open = menu?.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", String(open));
+  });
+</script>

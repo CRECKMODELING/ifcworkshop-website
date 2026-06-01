@@ -1,0 +1,206 @@
+---
+import Base from "../layouts/Base.astro";
+import Ordinal from "../components/Ordinal.astro";
+
+const organizing = [
+  {
+    name: "Matteo Pelucchi",
+    affiliation: "Politecnico di Milano",
+    country: "Italy",
+    photo: "/images/committee/matteo-pelucchi.jpg",
+  },
+  {
+    name: "Bin Yang",
+    affiliation: "Tsinghua University",
+    country: "China",
+    photo: "/images/committee/bin-yang.jpg",
+  },
+  {
+    name: "Brandon Rotavera",
+    affiliation: "University of Georgia",
+    country: "USA",
+    photo: "/images/committee/brandon-rotavera.jpg",
+  },
+  {
+    name: "Feng Zhang",
+    affiliation: "University of Science and Technology",
+    country: "China",
+    photo: "/images/committee/feng-zhang.png",
+  },
+  {
+    name: "Andrea Comandini",
+    affiliation: "CNRS Orléans",
+    country: "France",
+    photo: "/images/committee/andrea-comandini.jpg",
+  },
+  {
+    name: "Liming Cai",
+    affiliation: "Tongji University",
+    country: "China",
+    photo: "/images/committee/liming-cai.jpg",
+  },
+];
+
+const founding = [
+  {
+    name: "Yiguang Ju",
+    affiliation: "Department of Mechanical & Aerospace Engineering, Princeton University",
+    country: "USA",
+    photo: "/images/committee/yiguang-ju.jpg",
+  },
+  {
+    name: "Hai Wang",
+    affiliation: "Department of Mechanical Engineering, Stanford University",
+    country: "USA",
+    photo: "/images/committee/hai-wang.webp",
+  },
+];
+
+const advisory = [
+  {
+    name: "Nils Hansen",
+    affiliation: "Sandia National Laboratories",
+    country: "USA",
+    photo: "/images/committee/nils-hansen.jpg",
+  },
+  {
+    name: "Stephen J. Klippenstein",
+    affiliation: "Argonne National Laboratory",
+    country: "USA",
+    photo: "/images/committee/stephen-klippenstein.jpg",
+  },
+];
+---
+
+<Base title="Committee" description="Organizing and Advisory Committee of the 8th FCWS">
+  <div class="content-body">
+    <div class="page-header" style="padding-top:0;">
+      <h1>Committee</h1>
+      <p class="subtitle"><Ordinal n={8} /> International Workshop on Flame Chemistry — Kyoto 2026</p>
+    </div>
+
+    <section>
+      <div class="section-rule">
+        <h2>Organizing Committee</h2>
+      </div>
+      <div class="people-grid">
+        {organizing.map(p => (
+          <div class="person-card">
+            <div class="person-photo-wrap">
+              <img src={p.photo} alt={p.name} loading="lazy" />
+            </div>
+            <div class="person-info">
+              <span class="person-name">{p.name}</span>
+              <span class="person-affiliation">{p.affiliation}</span>
+              <span class="person-country">{p.country}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section style="margin-top:3rem;">
+      <div class="section-rule">
+        <h2>Advisory Committee</h2>
+      </div>
+      <div class="people-grid">
+        {advisory.map(p => (
+          <div class="person-card">
+            <div class="person-photo-wrap">
+              <img src={p.photo} alt={p.name} loading="lazy" />
+            </div>
+            <div class="person-info">
+              <span class="person-name">{p.name}</span>
+              <span class="person-affiliation">{p.affiliation}</span>
+              <span class="person-country">{p.country}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+    <section style="margin-top:3rem;">
+      <div class="section-rule">
+        <h2>Founding Members</h2>
+      </div>
+      <div class="people-grid">
+        {founding.map(p => (
+          <div class="person-card">
+            <div class="person-photo-wrap">
+              <img src={p.photo} alt={p.name} loading="lazy" />
+            </div>
+            <div class="person-info">
+              <span class="person-name">{p.name}</span>
+              <span class="person-affiliation">{p.affiliation}</span>
+              <span class="person-country">{p.country}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+  </div>
+</Base>
+
+<style>
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 2rem 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.person-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.person-photo-wrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--bg-tinted);
+  border-bottom: 3px solid var(--blue);
+}
+
+.person-photo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  filter: grayscale(20%);
+  transition: filter 0.25s;
+}
+
+.person-photo-wrap img:hover {
+  filter: grayscale(0%);
+}
+
+.person-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.person-name {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--ink);
+  line-height: 1.3;
+}
+
+.person-affiliation {
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+  line-height: 1.4;
+}
+
+.person-country {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+</style>
