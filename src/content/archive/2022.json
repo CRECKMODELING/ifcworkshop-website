@@ -1,10 +1,10 @@
 {
   "edition": 6,
   "year": 2022,
-  "location": "Vancouver, Canada",
-  "dates": "July 2022",
-  "summary": "The 6th FCWS was held as a satellite event of the 39th International Symposium on Combustion.",
-  "website": "",
+  "location": "Online (Zoom)",
+  "dates": "15–19 August 2022",
+  "summary": "The 6th FCWS was held virtually on Zoom. Sessions covered PAH and soot formation chemistry, low-temperature chemistry, gas-phase kinetics beyond combustion (plasma, catalysis), large mechanism development (thermochemistry, uncertainties, machine learning), low-carbon and sustainable aviation fuels, and thermal runaways. The workshop was organized by Nils Hansen (Sandia National Laboratories).",
+  "website": "https://yju.mycpanel.princeton.edu/6th_flame_chemistry_workshop.html",
   "programPdf": "",
   "photoGallery": [],
   "dataLinks": []
