@@ -3,9 +3,43 @@
   "year": 2018,
   "location": "Dublin, Ireland",
   "dates": "28–29 July 2018",
-  "summary": "The 4th FCWS was held at Trinity College Dublin as a satellite event of the 37th International Symposium on Combustion. Sessions covered computational mechanism generation, experimental diagnostics, warm flame chemistry, dual-fuel low-temperature combustion, and transport effects.",
+  "summary": "The 4<sup>th</sup> FCWS was held at Trinity College Dublin as a satellite event of the 37<sup>th</sup> International Symposium on Combustion. Sessions covered computational mechanism generation, experimental diagnostics, warm flame chemistry, dual-fuel low-temperature combustion, and transport effects.",
   "website": "https://yju.mycpanel.princeton.edu/4th_flame_chemistry_workshop.html",
   "programPdf": "",
   "photoGallery": [],
-  "dataLinks": []
+  "dataLinks": [],
+  "scope": "With increasing concerns of energy security and climate change, development of alternative fuels and advanced engine technologies using high pressure, low temperature, thermal and compositional stratified flow, HCCI, cool flames, flameless combustion, pressure gain combustion, supercritical combustion, and plasma assisted combustion at near flammability limit and non-equilibrium conditions provide potential approaches to increasing energy conversion efficiency and reducing air pollutant emissions. For a foreseeable future, combustion with renewable fuels will remain as a major energy conversion methodology. New combustion technologies at extreme conditions often lead to new flame regimes, increased flame instability, incomplete combustion, and strong chemistry–transport couplings. Biofuels will significantly change engine and emission performance. It is therefore of great importance to advance fundamental understanding of ignition and flame chemistry at extreme conditions to enable new fuels and to achieve accurate control of ignition, heat release rate, combustion instability, flame flashback, and emissions.",
+  "theme": [
+    "Large Scale Computing and a priori Mechanism Generation",
+    "Transformative Experimental Tools",
+    "Warm Flame and Plasma- and Ozone-assisted Combustion Chemistry",
+    "Dual Fuel Combustion Chemistry at Low-Temperatures",
+    "Collisional and Transport Effects"
+  ],
+  "organizingCommittee": [
+    "Zheng Chen — Peking University, China",
+    "Suk Ho Chung — KAUST, Saudi Arabia",
+    "Henry Curran — National University of Ireland, Ireland",
+    "William H. Green — MIT, USA",
+    "Nils Hansen — Sandia National Laboratory, USA",
+    "Kobayashi Hideaki — Tohoku University, Japan",
+    "Yiguang Ju — Princeton University, USA",
+    "Stephen J. Klippenstein — Argonne National Laboratory, USA",
+    "Matt Oehlschlaeger — Rensselaer Polytechnic Institute, USA",
+    "Heinz Pitsch — Aachen University, Germany",
+    "Fei Qi — Shanghai Jiao Tong University, China",
+    "Hai Wang — Stanford University, USA",
+    "Tamas Turanyi — Eötvös University, Hungary",
+    "Alison S. Tomlin — University of Leeds, UK",
+    "Robert S. Tranter — Argonne National Laboratory, USA"
+  ],
+  "advisoryCommittee": [
+    "Philippe Dagaut — CNRS, Orléans, France",
+    "Frederick L. Dryer — Princeton University, USA",
+    "Ronald Hanson — Stanford University, USA",
+    "Chung K. Law — Princeton University, USA",
+    "Katharina Kohse-Höinghaus — Bielefeld University, Germany",
+    "Charlie Westbrook — Lawrence Livermore National Laboratory, USA",
+    "Forman Williams — UC San Diego, USA"
+  ]
 }

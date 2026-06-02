@@ -3,9 +3,48 @@
   "year": 2014,
   "location": "San Francisco, USA",
   "dates": "2–3 August 2014",
-  "summary": "The 2nd FCWS was held at the Hyatt Regency San Francisco as a satellite event of the 35th International Symposium on Combustion. The workshop focused on ignition and flame behavior under high-pressure and low-temperature conditions, and turbulence-chemistry interactions.",
+  "summary": "The 2<sup>nd</sup> FCWS was held at the Hyatt Regency San Francisco as a satellite event of the 35<sup>th</sup> International Symposium on Combustion. The workshop focused on ignition and flame behavior under high-pressure and low-temperature conditions, and turbulence-chemistry interactions.",
   "website": "https://yju.mycpanel.princeton.edu/2nd_flame_chemistry_workshop.html",
   "programPdf": "",
   "photoGallery": [],
-  "dataLinks": []
+  "dataLinks": [],
+  "scope": "With increasing concerns of energy security and climate change, development of alternative fuels and advanced engine technologies using high pressure, low temperature, thermal and compositional stratified flow, HCCI, flameless, pressure gain combustion, and non-equilibrium plasma assisted combustion at near flammability limit conditions provide potential approaches to increasing energy conversion efficiency and reducing air pollutant emissions. For a foreseeable future, combustion with renewable fuels will remain as a major energy conversion methodology. New combustion technologies at extreme conditions often lead to new flame regimes, increased flame instability, incomplete combustion, and strong chemistry–transport couplings. Biofuels will significantly change engine and emission performance. It is therefore of great importance to advance fundamental understanding of ignition and flame chemistry at extreme conditions to enable new fuels and to achieve accurate control of ignition, heat release rate, combustion instability, flame flashback, and emissions.",
+  "theme": [
+    "What are the new findings and the major knowledge gaps in understanding ignition and flame chemistry at extreme conditions?",
+    "How to formulate theoretical and experimental strategies to narrow the knowledge gap and to develop better predictive kinetic models?",
+    "What are the major differences in chemistry between homogeneous ignition and laminar and turbulent flames?",
+    "How does low temperature chemistry affect ignition and combustion in high pressure HCCI, PPCI, RCCI, and gas turbine engines?",
+    "How can we quantify the fidelity of high pressure flame chemistry and transport data?",
+    "How can we extract constraining information for model construction from macro measure ignition delay time, flame speeds, and extinction limits?",
+    "What diagnostics can we apply to high pressure systems?",
+    "How does turbulence and chemistry interact in high pressure and Reynolds flows?",
+    "Can this workshop formulate collaborative relationships in research and education?",
+    "Can this workshop make focused recommendations of grand challenge topics in chemistry to the combustion research community?"
+  ],
+  "organizingCommittee": [
+    "Zheng Chen — Peking University, China",
+    "Suk Ho Chung — KAUST, Saudi Arabia",
+    "Henry Curran — National University of Ireland, Ireland",
+    "William H. Green — MIT, USA",
+    "Nils Hansen — Sandia National Laboratory, USA",
+    "Kobayashi Hideaki — Tohoku University, Japan",
+    "Yiguang Ju — Princeton University, USA",
+    "Stephen J. Klippenstein — Argonne National Laboratory, USA",
+    "Matt Oehlschlaeger — Rensselaer Polytechnic Institute, USA",
+    "Heinz Pitsch — Aachen University, Germany",
+    "Fei Qi — University of Science and Technology of China, China",
+    "Hai Wang — University of Southern California, USA",
+    "Tamas Turanyi — Eötvös University, Hungary",
+    "Alison S. Tomlin — University of Leeds, UK",
+    "Robert S. Tranter — Argonne National Laboratory, USA"
+  ],
+  "advisoryCommittee": [
+    "Philippe Dagaut — CNRS, Orléans, France",
+    "Frederick L. Dryer — Princeton University, USA",
+    "Ronald Hanson — Stanford University, USA",
+    "Chung K. Law — Princeton University, USA",
+    "Katharina Kohse-Höinghaus — Bielefeld University, Germany",
+    "Charlie Westbrook — Lawrence Livermore National Laboratory, USA",
+    "Forman Williams — UC San Diego, USA"
+  ]
 }

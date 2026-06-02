@@ -3,9 +3,44 @@
   "year": 2022,
   "location": "Online (Zoom)",
   "dates": "15–19 August 2022",
-  "summary": "The 6th FCWS was held virtually on Zoom. Sessions covered PAH and soot formation chemistry, low-temperature chemistry, gas-phase kinetics beyond combustion (plasma, catalysis), large mechanism development (thermochemistry, uncertainties, machine learning), low-carbon and sustainable aviation fuels, and thermal runaways. The workshop was organized by Nils Hansen (Sandia National Laboratories).",
+  "summary": "The 6<sup>th</sup> FCWS was held virtually on Zoom. Sessions covered PAH and soot formation chemistry, low-temperature chemistry, gas-phase kinetics beyond combustion (plasma, catalysis), large mechanism development (thermochemistry, uncertainties, machine learning), low-carbon and sustainable aviation fuels, and thermal runaways. The workshop was organized by Nils Hansen (Sandia National Laboratories).",
   "website": "https://yju.mycpanel.princeton.edu/6th_flame_chemistry_workshop.html",
   "programPdf": "",
   "photoGallery": [],
-  "dataLinks": []
+  "dataLinks": [],
+  "scope": "With increasing concerns of energy security and climate change, development of alternative fuels and advanced engine technologies using high pressure, low temperature, thermal and compositional stratified flow, HCCI, cool flames, flameless combustion, ammonia combustion, pressure gain combustion, supercritical combustion, and plasma assisted combustion at near flammability limit and non-equilibrium conditions provide potential approaches to increasing energy conversion efficiency and reducing air pollutant emissions. For a foreseeable future, combustion with renewable fuels will remain as a major energy conversion methodology. New combustion technologies at extreme conditions often lead to new flame regimes, increased flame instability, incomplete combustion, and strong chemistry–transport couplings. Biofuels will significantly change engine and emission performance. It is therefore of great importance to advance fundamental understanding of ignition and flame chemistry at extreme conditions to enable new fuels and to achieve accurate control of ignition, heat release rate, combustion instability, flame flashback, and emissions.",
+  "theme": [
+    "PAH and soot formation chemistry, material synthesis",
+    "Chemistry at low temperatures",
+    "Gas-phase kinetics beyond combustion (plasma, catalysis, etc.)",
+    "Large mechanism development (thermochemistry, validation targets, uncertainties, automation, experimental design, machine learning)",
+    "Low-carbon fuels, e-fuels, sustainable aviation fuels",
+    "Thermal runaways"
+  ],
+  "organizingCommittee": [
+    "Zheng Chen — Peking University, China",
+    "Suk Ho Chung — KAUST, Saudi Arabia",
+    "Henry Curran — National University of Ireland, Ireland",
+    "William H. Green — MIT, USA",
+    "Nils Hansen — Sandia National Laboratory, USA",
+    "Kobayashi Hideaki — Tohoku University, Japan",
+    "Yiguang Ju — Princeton University, USA",
+    "Stephen J. Klippenstein — Argonne National Laboratory, USA",
+    "Matt Oehlschlaeger — Rensselaer Polytechnic Institute, USA",
+    "Heinz Pitsch — Aachen University, Germany",
+    "Fei Qi — Shanghai Jiao Tong University, China",
+    "Hai Wang — Stanford University, USA",
+    "Tamas Turanyi — Eötvös University, Hungary",
+    "Alison S. Tomlin — University of Leeds, UK",
+    "Robert S. Tranter — Argonne National Laboratory, USA"
+  ],
+  "advisoryCommittee": [
+    "Philippe Dagaut — CNRS, Orléans, France",
+    "Frederick L. Dryer — Princeton University, USA",
+    "Ronald Hanson — Stanford University, USA",
+    "Chung K. Law — Princeton University, USA",
+    "Katharina Kohse-Höinghaus — Bielefeld University, Germany",
+    "Charlie Westbrook — Lawrence Livermore National Laboratory, USA",
+    "Forman Williams — UC San Diego, USA"
+  ]
 }

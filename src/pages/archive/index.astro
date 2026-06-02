@@ -17,18 +17,13 @@ editions.sort((a, b) => b.data.year - a.data.year);
     <ul class="archive-list">
       {editions.map((ed) => (
         <li>
-          <div>
+          <a href={`/archive/${ed.data.year}`} class="archive-entry-link">
             <span class="archive-entry-title">
               <Ordinal n={ed.data.edition} /> edition &mdash; {ed.data.location}
+              <span class="archive-entry-dates">{ed.data.dates}</span>
             </span>
-            <div class="archive-entry-meta">
-              <span>{ed.data.dates}</span>
-              {ed.data.website
-                ? <a href={ed.data.website} target="_blank" rel="noopener">Workshop website →</a>
-                : <span class="archive-coming-soon">Materials coming soon</span>
-              }
-            </div>
-          </div>
+            <span class="archive-entry-arrow">→</span>
+          </a>
         </li>
       ))}
     </ul>
@@ -36,8 +31,38 @@ editions.sort((a, b) => b.data.year - a.data.year);
 </Base>
 
 <style>
-.archive-coming-soon {
-  font-style: italic;
+.archive-list li {
+  border: none !important;
+  padding: 0.5rem 0 !important;
+}
+.archive-list li:first-child {
+  border: none !important;
+}
+.archive-entry-link {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
+  gap: 1rem;
+}
+.archive-entry-dates {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  font-family: var(--font-sans);
+  font-weight: 400;
+  margin-left: 0.6rem;
+}
+.archive-entry-arrow {
   color: var(--ink-faint);
+  transition: transform 0.15s ease, color 0.15s ease;
+  flex-shrink: 0;
+}
+.archive-entry-link:hover .archive-entry-title {
+  color: var(--blue);
+}
+.archive-entry-link:hover .archive-entry-arrow {
+  transform: translateX(4px);
+  color: var(--blue);
 }
 </style>

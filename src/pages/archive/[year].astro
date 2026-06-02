@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 }
 
 const { ed } = Astro.props;
-const { edition, year, location, dates, summary, website, programPdf, photoGallery, dataLinks } = ed.data;
+const { edition, year, location, dates, summary, website, programPdf, photoGallery, dataLinks, perspectivePaper, scope, theme, organizingCommittee, advisoryCommittee } = ed.data;
 ---
 
 <Base
@@ -28,7 +28,7 @@ const { edition, year, location, dates, summary, website, programPdf, photoGalle
 
     <p><a href="/archive">&larr; Back to Archive</a></p>
 
-    {summary && <p style="margin-top:1.5rem;">{summary}</p>}
+    {summary && <p style="margin-top:1.5rem;" set:html={summary} />}
 
     {website && (
       <p style="margin-top:1rem;">
@@ -40,8 +40,55 @@ const { edition, year, location, dates, summary, website, programPdf, photoGalle
 
     {programPdf && (
       <p>
-        <a href={programPdf} class="btn" download>Download Program (PDF)</a>
+        <a href={programPdf} class="btn" download>Download Book of Abstracts (PDF)</a>
       </p>
+    )}
+
+    {perspectivePaper && (
+      <div class="perspective-banner">
+        <img src="/images/combustion-flame-logo.jpg" alt="Combustion and Flame journal cover" class="perspective-cover" />
+        <div class="perspective-content">
+          <div class="perspective-label">Perspective Paper</div>
+          <p class="perspective-title">{perspectivePaper.title}</p>
+          <p class="perspective-authors">{perspectivePaper.authors}</p>
+          <p class="perspective-journal">{perspectivePaper.journal}</p>
+          <a href={perspectivePaper.doi} target="_blank" rel="noopener" class="perspective-doi">doi:{perspectivePaper.doi.replace('https://doi.org/', '')} →</a>
+        </div>
+      </div>
+    )}
+
+    {scope && (
+      <>
+        <h2>Scope</h2>
+        <p>{scope}</p>
+      </>
+    )}
+
+    {theme && theme.length > 0 && (
+      <>
+        <h2>Theme</h2>
+        <ul>
+          {theme.map((item: string) => <li>{item}</li>)}
+        </ul>
+      </>
+    )}
+
+    {organizingCommittee && organizingCommittee.length > 0 && (
+      <>
+        <h2>Organizing Committee</h2>
+        <ul>
+          {organizingCommittee.map((member: string) => <li>{member}</li>)}
+        </ul>
+      </>
+    )}
+
+    {advisoryCommittee && advisoryCommittee.length > 0 && (
+      <>
+        <h2>Advisory Committee</h2>
+        <ul>
+          {advisoryCommittee.map((member: string) => <li>{member}</li>)}
+        </ul>
+      </>
     )}
 
     {dataLinks && dataLinks.length > 0 && (
@@ -66,10 +113,58 @@ const { edition, year, location, dates, summary, website, programPdf, photoGalle
       </>
     )}
 
-    {(!programPdf && (!dataLinks || dataLinks.length === 0) && (!photoGallery || photoGallery.length === 0)) && (
-      <div class="notice" style="margin-top:1.5rem;">
-        Materials for this edition are not yet available online.
-      </div>
-    )}
   </div>
 </Base>
+
+<style>
+.perspective-banner {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  margin: 1.75rem 0;
+  padding: 1.25rem 1.5rem;
+  border-left: 3px solid var(--blue);
+  background: color-mix(in srgb, var(--blue) 6%, transparent);
+  border-radius: 0 4px 4px 0;
+}
+.perspective-cover {
+  width: 80px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+}
+.perspective-content {
+  flex: 1;
+  min-width: 0;
+}
+.perspective-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 0.5rem;
+}
+.perspective-title {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0 0.35rem;
+  line-height: 1.4;
+}
+.perspective-authors {
+  font-size: 0.875rem;
+  color: var(--ink-muted);
+  margin: 0 0 0.2rem;
+}
+.perspective-journal {
+  font-size: 0.875rem;
+  color: var(--ink-muted);
+  font-style: italic;
+  margin: 0 0 0.5rem;
+}
+.perspective-doi {
+  font-size: 0.8rem;
+  font-family: var(--font-mono, monospace);
+}
+</style>

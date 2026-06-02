@@ -7,36 +7,54 @@ const organizing = [
     name: "Matteo Pelucchi",
     affiliation: "Politecnico di Milano",
     country: "Italy",
+    email: "matteo.pelucchi@polimi.it",
+    scholar: "https://scholar.google.com/citations?hl=it&user=_pQycK8AAAAJ&view_op=list_works&sortby=pubdate",
+    website: "https://www.creckmodeling.polimi.it/team/matteo-pelucchi/",
     photo: "/images/committee/matteo-pelucchi.jpg",
   },
   {
     name: "Bin Yang",
     affiliation: "Tsinghua University",
     country: "China",
+    email: "byang@tsinghua.edu.cn",
+    scholar: "https://scholar.google.com/citations?user=jX4VmJEAAAAJ&hl=zh-CN",
+    website: "https://www.cce.tsinghua.edu.cn/en/info/1005/2211.htm",
     photo: "/images/committee/bin-yang.jpg",
   },
   {
     name: "Brandon Rotavera",
     affiliation: "University of Georgia",
     country: "USA",
+    email: "rotavera@uga.edu",
+    scholar: "https://scholar.google.com/citations?user=MDVL2x8AAAAJ&hl=en",
+    website: "https://rotavera.uga.edu/",
     photo: "/images/committee/brandon-rotavera.jpg",
   },
   {
     name: "Feng Zhang",
     affiliation: "University of Science and Technology",
     country: "China",
+    email: "feng2011@ustc.edu.cn",
+    scholar: "https://scholar.google.com/citations?user=FU1fn2EAAAAJ&hl=zh-CN",
+    website: "http://staff.ustc.edu.cn/~feng2011/people/fengzhang.html",
     photo: "/images/committee/feng-zhang.png",
   },
   {
     name: "Andrea Comandini",
     affiliation: "CNRS Orléans",
     country: "France",
+    email: "andrea.comandini@cnrs-orleans.fr",
+    scholar: null,
+    website: "https://shockwaves-icare.cnrs.fr/erc_fun-pm/cv-ac/",
     photo: "/images/committee/andrea-comandini.jpg",
   },
   {
     name: "Liming Cai",
     affiliation: "Tongji University",
     country: "China",
+    email: "lcai@tongji.edu.cn",
+    scholar: "https://scholar.google.com/citations?user=VstEICkAAAAJ&hl=en",
+    website: null,
     photo: "/images/committee/liming-cai.jpg",
   },
 ];
@@ -61,12 +79,18 @@ const advisory = [
     name: "Nils Hansen",
     affiliation: "Sandia National Laboratories",
     country: "USA",
+    email: "nhansen@sandia.gov",
+    scholar: null,
+    website: null,
     photo: "/images/committee/nils-hansen.jpg",
   },
   {
     name: "Stephen J. Klippenstein",
     affiliation: "Argonne National Laboratory",
     country: "USA",
+    email: "sjk@anl.gov",
+    scholar: null,
+    website: null,
     photo: "/images/committee/stephen-klippenstein.jpg",
   },
 ];
@@ -93,6 +117,31 @@ const advisory = [
               <span class="person-name">{p.name}</span>
               <span class="person-affiliation">{p.affiliation}</span>
               <span class="person-country">{p.country}</span>
+              <div class="person-links">
+                {p.email && (
+                  <a href={`mailto:${p.email}`} class="person-icon-link" title={p.email} aria-label={`Email ${p.name}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="4" width="20" height="16" rx="2"/>
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                  </a>
+                )}
+                {p.scholar && (
+                  <a href={p.scholar} target="_blank" rel="noopener" class="person-icon-link" title="Google Scholar" aria-label={`Google Scholar profile of ${p.name}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5z"/>
+                    </svg>
+                  </a>
+                )}
+                {p.website && (
+                  <a href={p.website} target="_blank" rel="noopener" class="person-icon-link" title="Website" aria-label={`Website of ${p.name}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"/>
+                      <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                    </svg>
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         ))}
@@ -113,6 +162,16 @@ const advisory = [
               <span class="person-name">{p.name}</span>
               <span class="person-affiliation">{p.affiliation}</span>
               <span class="person-country">{p.country}</span>
+              <div class="person-links">
+                {p.email && (
+                  <a href={`mailto:${p.email}`} class="person-icon-link" title={p.email} aria-label={`Email ${p.name}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="4" width="20" height="16" rx="2"/>
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         ))}
@@ -153,6 +212,15 @@ const advisory = [
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  border-bottom: 1px solid var(--blue);
+  padding-bottom: 0.75rem;
+}
+
+.person-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  flex: 1;
 }
 
 .person-photo-wrap {
@@ -160,7 +228,6 @@ const advisory = [
   aspect-ratio: 1 / 1;
   overflow: hidden;
   background: var(--bg-tinted);
-  border-bottom: 3px solid var(--blue);
 }
 
 .person-photo-wrap img {
@@ -177,11 +244,6 @@ const advisory = [
   filter: grayscale(0%);
 }
 
-.person-info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-}
 
 .person-name {
   font-family: var(--font-serif);
@@ -202,5 +264,23 @@ const advisory = [
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-faint);
+}
+
+.person-links {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: auto;
+  padding-top: 0.4rem;
+}
+.person-icon-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--ink-faint);
+  text-decoration: none;
+  border: none;
+  transition: color 0.15s;
+}
+.person-icon-link:hover {
+  color: var(--blue);
 }
 </style>
