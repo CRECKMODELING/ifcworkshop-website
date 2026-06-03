@@ -127,6 +127,19 @@ import Ordinal from "../components/Ordinal.astro";
         </ul>
 
         <div class="section-rule" style="margin-top: 2.75rem;">
+          <h2>From the last edition</h2>
+        </div>
+        <a href="/archive/2024" class="last-edition-photo-link">
+          <img
+            src="/images/archive/2024/IFCWS-img.jpg"
+            alt="7th FCWS — Milan 2024"
+            class="last-edition-photo"
+            loading="lazy"
+          />
+          <span class="last-edition-caption">7th FCWS · Milan, July 2024 — See the full archive →</span>
+        </a>
+
+        <div class="section-rule" style="margin-top: 2.75rem;">
           <h2>History</h2>
         </div>
         <p>
@@ -269,6 +282,25 @@ import Ordinal from "../components/Ordinal.astro";
   border-bottom-color: transparent;
 }
 .paper-doi:hover { border-bottom-color: var(--blue); }
+
+.last-edition-photo-link {
+  display: block;
+  border: none;
+  margin-top: 0.75rem;
+}
+.last-edition-photo {
+  width: 100%;
+  border-radius: 4px;
+}
+.last-edition-caption {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+}
+.last-edition-photo-link:hover .last-edition-caption {
+  color: var(--blue);
+}
 
 .founders {
   display: flex;

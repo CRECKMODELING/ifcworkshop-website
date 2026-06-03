@@ -34,7 +34,7 @@
     "Stephen Klippenstein — Argonne National Laboratory, USA",
     "Nils Hansen — Sandia National Laboratory, USA"
   ],
-  "photoGallery": [],
+  "photoGallery": ["/images/archive/2024/IFCWS-img.jpg"],
   "dataLinks": [
     { "url": "/files/proceedings-7th-edition.pdf", "label": "Book of Abstracts" },
     { "url": "/files/list-participant-7th-edition.pdf", "label": "List of Participants" }
