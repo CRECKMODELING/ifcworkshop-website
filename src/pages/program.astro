@@ -29,19 +29,21 @@ import Ordinal from "../components/Ordinal.astro";
       </div>
     </div>
 
-    <a href="/files/Book_of_Abstracts_FCWS_2026.pdf" class="boa-card" download>
+    <div class="boa-card">
       <div class="boa-info">
         <span class="boa-eyebrow">Now available</span>
         <span class="boa-title">Book of Abstracts — <Ordinal n={8} /> FCWS 2026</span>
         <span class="boa-desc">The final collection of contributed abstracts for the Kyoto workshop is ready to download.</span>
       </div>
-      <div class="boa-cta">
-        <span>Download PDF</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 5v14M5 12l7 7 7-7"/>
-        </svg>
+      <div class="boa-actions">
+        <a href="/files/Book_of_Abstracts_FCWS_2026.pdf" class="boa-cta" download>
+          <span>Download PDF</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 5v14M5 12l7 7 7-7"/>
+          </svg>
+        </a>
       </div>
-    </a>
+    </div>
 
     <!-- DAY 1 -->
     <div class="program-day-header">
@@ -325,12 +327,7 @@ import Ordinal from "../components/Ordinal.astro";
   background: linear-gradient(135deg, var(--bg-tinted) 0%, var(--bg-warm) 100%);
   padding: 1.25rem 1.5rem;
   margin-bottom: 2.5rem;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
   box-shadow: 0 1px 3px rgba(13, 27, 42, 0.06);
-}
-.boa-card:hover {
-  box-shadow: 0 6px 18px rgba(13, 27, 42, 0.12);
-  transform: translateY(-1px);
 }
 
 .boa-doc {
@@ -396,7 +393,6 @@ import Ordinal from "../components/Ordinal.astro";
   border: none;
   transition: background 0.15s ease;
 }
-.boa-card:hover .boa-cta { background: var(--blue-mid); }
 a.boa-cta:hover { background: var(--blue-mid); }
 
 .boa-cta-ghost {
