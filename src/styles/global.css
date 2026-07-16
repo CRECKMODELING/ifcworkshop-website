@@ -500,6 +500,10 @@ main { padding-bottom: 0; }
   padding-top: 1rem;
 }
 
+.content-cols > aside > .sidebar-block:first-child {
+  margin-top: 0.8rem;
+}
+
 .sidebar-block + .sidebar-block { margin-top: 2rem; }
 
 .sidebar-block h4 {
