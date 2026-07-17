@@ -10,54 +10,54 @@ import Ordinal from "../components/Ordinal.astro";
       <p class="subtitle"><Ordinal n={8} /> FCWS &mdash; 25–26 July 2026, Kyoto</p>
     </div>
 
-    <div class="boa-card">
-      <div class="boa-info">
+    <div class="boa-grid">
+      <div class="boa-card">
         <span class="boa-eyebrow">Final Agenda Available</span>
-        <span class="boa-title">Program Agenda &mdash; <Ordinal n={8} /> FCWS 2026</span>
+        <span class="boa-title">Program Agenda</span>
         <span class="boa-desc">Download the official agenda or add both workshop days to your calendar.</span>
+        <div class="boa-actions">
+          <a href="/files/agenda-8th-fcws-2026.pdf" class="boa-cta" download>
+            <span>Download PDF</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+          </a>
+          <a href="/files/8th-fcws-2026.ics" class="boa-cta boa-cta-ghost" download title="Add to Calendar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2"/>
+              <path d="M16 2v4M8 2v4M3 10h18"/>
+            </svg>
+            <span class="sr-only">Add to Calendar</span>
+          </a>
+        </div>
       </div>
-      <div class="boa-actions">
-        <a href="/files/agenda-8th-fcws-2026.pdf" class="boa-cta" download>
-          <span>Download PDF</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 5v14M5 12l7 7 7-7"/>
-          </svg>
-        </a>
-        <a href="/files/8th-fcws-2026.ics" class="boa-cta boa-cta-ghost" download>
-          <span>Add to Calendar</span>
-        </a>
-      </div>
-    </div>
 
-    <div class="boa-card">
-      <div class="boa-info">
+      <div class="boa-card">
         <span class="boa-eyebrow">Now available</span>
-        <span class="boa-title">Book of Abstracts — <Ordinal n={8} /> FCWS 2026</span>
+        <span class="boa-title">Book of Abstracts</span>
         <span class="boa-desc">The final collection of contributed abstracts for the Kyoto workshop is ready to download.</span>
+        <div class="boa-actions">
+          <a href="/files/Book_of_Abstracts_FCWS_2026.pdf" class="boa-cta" download>
+            <span>Download PDF</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+          </a>
+        </div>
       </div>
-      <div class="boa-actions">
-        <a href="/files/Book_of_Abstracts_FCWS_2026.pdf" class="boa-cta" download>
-          <span>Download PDF</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 5v14M5 12l7 7 7-7"/>
-          </svg>
-        </a>
-      </div>
-    </div>
 
-    <div class="boa-card">
-      <div class="boa-info">
+      <div class="boa-card">
         <span class="boa-eyebrow">Now available</span>
-        <span class="boa-title">Logistics Information &mdash; <Ordinal n={8} /> FCWS 2026</span>
+        <span class="boa-title">Logistics Information</span>
         <span class="boa-desc">Venue maps, session rooms, WiFi access and other practical details for attending in Kyoto.</span>
-      </div>
-      <div class="boa-actions">
-        <a href="/files/logistics-information.pdf" class="boa-cta" download>
-          <span>Download PDF</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 5v14M5 12l7 7 7-7"/>
-          </svg>
-        </a>
+        <div class="boa-actions">
+          <a href="/files/logistics-information.pdf" class="boa-cta" download>
+            <span>Download PDF</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
 
@@ -205,7 +205,7 @@ import Ordinal from "../components/Ordinal.astro";
             <span class="talk-speaker">Xianwu Jiang — Wuhan University of Technology, China</span>
             <span class="talk-title">"Laser diagnostics of hydrogen: from quadrupole absorption to Raman scattering"</span>
             <span class="talk-speaker">Wei Ren — The Chinese University of Hong Kong, Hong Kong</span>
-            <span class="talk-title">"Non-Equilibrium Plasmas as an Enabling Technology to Improve Next-Generation Combustion Architectures"</span>
+            <span class="talk-title">"Nanosecond-Duration Pulsed Discharges (ns-PD) to Enhance Ignition for Next-Generation Combustion Architectures"</span>
             <span class="talk-speaker">Nicholas Tsolas — Auburn University, USA</span>
           </td>
         </tr>
@@ -334,41 +334,26 @@ import Ordinal from "../components/Ordinal.astro";
 </Base>
 
 <style>
+.boa-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
 .boa-card {
   display: flex;
-  align-items: center;
-  gap: 1.25rem;
+  flex-direction: column;
+  gap: 0.6rem;
   border: none;
   border-left: 4px solid var(--blue);
   background: linear-gradient(135deg, var(--bg-tinted) 0%, var(--bg-warm) 100%);
-  padding: 1.25rem 1.5rem;
-  margin-bottom: 2.5rem;
+  padding: 1.1rem 1.15rem;
   box-shadow: 0 1px 3px rgba(13, 27, 42, 0.06);
 }
 
-.boa-doc {
-  flex-shrink: 0;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: var(--blue);
-  color: #fff;
-}
-.boa-doc svg { width: 24px; height: 24px; }
-
-.boa-info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  flex: 1;
-  min-width: 0;
-}
-
 .boa-eyebrow {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -377,33 +362,35 @@ import Ordinal from "../components/Ordinal.astro";
 
 .boa-title {
   font-family: var(--font-serif);
-  font-size: 1.15rem;
+  font-size: 1rem;
   color: var(--ink);
-  line-height: 1.3;
+  line-height: 1.25;
 }
 
 .boa-desc {
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   color: var(--ink-muted);
+  line-height: 1.4;
 }
 
 .boa-actions {
-  flex-shrink: 0;
   display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.6rem;
 }
 
 .boa-cta {
-  flex-shrink: 0;
+  flex: 1;
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  justify-content: center;
+  gap: 0.3rem;
   background: var(--blue);
   color: #fff;
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   font-weight: 600;
-  padding: 0.55rem 1rem;
+  padding: 0.5rem 0.6rem;
   border-radius: 3px;
   white-space: nowrap;
   border: none;
@@ -412,16 +399,29 @@ import Ordinal from "../components/Ordinal.astro";
 a.boa-cta:hover { background: var(--blue-mid); }
 
 .boa-cta-ghost {
+  flex: 0 0 auto;
+  width: 2.3rem;
+  padding: 0.5rem;
   background: transparent;
   color: var(--blue);
   border: 1px solid var(--rule-heavy);
 }
 a.boa-cta-ghost:hover { background: var(--bg-tinted); color: var(--blue-mid); }
 
-@media (max-width: 560px) {
-  .boa-card { flex-wrap: wrap; }
-  .boa-actions { width: 100%; }
-  .boa-cta { width: 100%; justify-content: center; }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 700px) {
+  .boa-grid { grid-template-columns: 1fr; }
 }
 
 .program-day-header {
