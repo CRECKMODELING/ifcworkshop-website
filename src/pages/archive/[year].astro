@@ -38,12 +38,6 @@ const { edition, year, location, dates, summary, website, programPdf, photoGalle
       </p>
     )}
 
-    {programPdf && (
-      <p>
-        <a href={programPdf} class="btn" download>Download Book of Abstracts (PDF)</a>
-      </p>
-    )}
-
     {perspectivePaper && (
       <div class="perspective-banner">
         <img src="/images/combustion-flame-logo.jpg" alt="Combustion and Flame journal cover" class="perspective-cover" />
@@ -94,11 +88,18 @@ const { edition, year, location, dates, summary, website, programPdf, photoGalle
     {dataLinks && dataLinks.length > 0 && (
       <>
         <h2>Data &amp; Materials</h2>
-        <ul>
+        <div class="downloads-grid">
           {dataLinks.map((link: { url: string; label: string }) => (
-            <li><a href={link.url} target="_blank" rel="noopener">{link.label}</a></li>
+            <a href={link.url} class="download-card" target="_blank" rel="noopener">
+              <span class="download-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 5v14M5 12l7 7 7-7"/>
+                </svg>
+              </span>
+              <span class="download-label">{link.label}</span>
+            </a>
           ))}
-        </ul>
+        </div>
       </>
     )}
 
@@ -117,6 +118,47 @@ const { edition, year, location, dates, summary, website, programPdf, photoGalle
 </Base>
 
 <style>
+.downloads-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.download-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-left: 4px solid var(--blue);
+  background: linear-gradient(135deg, var(--bg-tinted) 0%, var(--bg-warm) 100%);
+  padding: 0.85rem 1rem;
+  box-shadow: 0 1px 3px rgba(13, 27, 42, 0.06);
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+.download-card:hover {
+  background: linear-gradient(135deg, var(--bg-tinted) 0%, var(--bg-tinted) 100%);
+}
+
+.download-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: #fff;
+}
+
+.download-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.3;
+}
+
 .photo-fullbleed {
   margin-top: 1rem;
 }

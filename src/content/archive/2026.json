@@ -1,0 +1,34 @@
+{
+  "edition": 8,
+  "year": 2026,
+  "location": "Kyoto, Japan",
+  "dates": "25–26 July 2026",
+  "summary": "The 8<sup>th</sup> FCWS was held at Doshisha University, Kyoto, as a satellite of the 41<sup>st</sup> International Symposium on Combustion, including a joint half-morning session with the RCM Workshop. The workshop advanced discussions on combustion chemistry through experiments, theory, and chemical kinetics modeling, building on the perspective paper arising from the 7th FCWS in Milan (2024).",
+  "website": "",
+  "programPdf": "/files/Book_of_Abstracts_FCWS_2026.pdf",
+  "scope": "Increasing concerns of energy security, climate change, and the challenges of the carbon-neutral energy transition drive the design of alternative fuels and their implementation in advanced combustion devices. The understanding of fundamental aspects of high and low temperature combustion such as ignition, flame chemistry, and emissions of new fuels (H₂, NH₃, sustainable aviation fuels, etc.) or under new and advanced combustion conditions (high pressure, plasma assisted, flameless, supercritical combustion, etc.) supports the design of new technologies while expanding technical and scientific knowledge in a key energy sector. The International Flame Chemistry Workshop gathers scientists and researchers from chemistry, physics, physical and theoretical chemistry, mechanical, aerospace, and chemical engineering to discuss and foster collaboration over many fundamental challenges.",
+  "theme": [
+    "Sustainable fuels combustion (LFS, IDT, pollutants): H₂, NH₃, SAFs",
+    "Advanced diagnostics for combustion measurements",
+    "Plasma combustion: experiments and modelling",
+    "AI-TST-ME: automation, benchmarking and knowledge transfer",
+    "Chemical Kinetic Mechanisms: Progress in Accuracy and Details"
+  ],
+  "organizingCommittee": [
+    "Matteo Pelucchi — Politecnico di Milano, Italy (Workshop Chair)",
+    "Bin Yang — Tsinghua University, China (Workshop Chair)",
+    "Brandon Rotavera — University of Georgia, USA",
+    "Feng Zhang — University of Science and Technology of China, China",
+    "Andrea Comandini — CNRS Orléans, France",
+    "Liming Cai — Tongji University, China"
+  ],
+  "advisoryCommittee": [
+    "Stephen Klippenstein — Argonne National Laboratory, USA",
+    "Nils Hansen — Sandia National Laboratory, USA"
+  ],
+  "photoGallery": [],
+  "dataLinks": [
+    { "url": "/files/Book_of_Abstracts_FCWS_2026.pdf", "label": "Book of Abstracts" },
+    { "url": "/files/agenda-8th-fcws-2026.pdf", "label": "Final Agenda" }
+  ]
+}
