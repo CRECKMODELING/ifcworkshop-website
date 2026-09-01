@@ -28,7 +28,17 @@
   ],
   "photoGallery": [],
   "dataLinks": [
-    { "url": "/files/Book_of_Abstracts_FCWS_2026.pdf", "label": "Book of Abstracts" },
-    { "url": "/files/agenda-8th-fcws-2026.pdf", "label": "Final Agenda" }
+    {
+      "url": "/files/Book_of_Abstracts_FCWS_2026.pdf",
+      "label": "Book of Abstracts"
+    },
+    {
+      "url": "/files/agenda-8th-fcws-2026.pdf",
+      "label": "Final Agenda"
+    },
+    {
+      "url": "/files/list-participant-8th-edition.pdf",
+      "label": "List of Participants"
+    }
   ]
 }
