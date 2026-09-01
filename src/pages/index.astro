@@ -112,9 +112,12 @@ import Ordinal from "../components/Ordinal.astro";
               Guest editors: Matteo Pelucchi, Andrea Comandini, Brandon Rotavera, Feng Zhang &middot;
               Open access (APC $2,450 USD)
             </p>
-            <p>
+            <p class="special-issue-links">
               <a href="https://www.sciencedirect.com/journal/applications-in-energy-and-combustion-science" target="_blank" rel="noopener">
-                Journal &amp; submission info →
+                Journal &amp; submission info
+              </a>
+              <a href="https://www.sciencedirect.com/special-issue/336599/8th-international-flame-chemistry-workshop" target="_blank" rel="noopener">
+                Special issue page
               </a>
             </p>
           </div>
@@ -293,6 +296,12 @@ import Ordinal from "../components/Ordinal.astro";
 .special-issue-row > div {
   flex: 1;
   min-width: 0;
+}
+.special-issue-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: flex-start;
 }
 .special-issue-cover {
   width: 150px;
